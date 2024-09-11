@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +43,26 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+.bg-image {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-image1 {
+  background-image: url("/background1.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-image2 {
+  background-image: url("/mockup.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
