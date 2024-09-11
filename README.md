@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Documentation Technique : Installation de l'application Next.js avec Tailwind CSS
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+Ce document fournit des instructions détaillées pour installer et lancer l'application Next.js avec Tailwind CSS. L'application est conçue pour le festival FESIPOP, un événement 100% K-pop en France.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
+
+- Node.js (version 14 ou supérieure)
+- npm (Node Package Manager) ou yarn
+
+## Installation
+
+### Étape 1 : Cloner le dépôt
+
+Clonez le dépôt de l'application depuis GitHub :
+
+```bash
+git clone https://github.com/votre-utilisateur/fesipop-landingpage.git
+cd fesipop-landingpage
+```
+
+### Étape 2 : Installer les dépendances
+
+Installez les dépendances nécessaires en utilisant npm ou yarn :
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+### Étape 3 : Configurer Tailwind CSS
+
+Tailwind CSS est déjà configuré dans le projet. Vous pouvez vérifier les fichiers de configuration suivants :
+
+- `tailwind.config.js`
+- `postcss.config.js`
+
+### Étape 4 : Lancer l'application en mode développement
+
+Pour lancer l'application en mode développement, utilisez la commande suivante :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application sera accessible à l'adresse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Étape 5 : Construire l'application pour la production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pour construire l'application pour la production, utilisez la commande suivante :
 
-## Learn More
+```bash
+npm run build
+# ou
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Étape 6 : Démarrer l'application en mode production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour démarrer l'application en mode production, utilisez la commande suivante :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+# ou
+yarn start
+```
 
-## Deploy on Vercel
+## Structure du projet
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Le projet est structuré de la manière suivante :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+fesipop-landingpage/
+├── components/
+│   └── ArtistCards.js
+├── pages/
+│   └── index.js
+├── public/
+│   └── logo.png
+│   └── bar.jpg
+│   └── camping.jpg
+│   └── scene.jpg
+│   └── shop.jpg
+├── styles/
+│   └── globals.css
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+```
+
+## Composants principaux
+
+### `ArtistCards`
+
+Le composant `ArtistCards` est utilisé pour afficher les cartes des artistes dans la section "Line up !".
+
+### `Home`
+
+Le composant `Home` est la page principale de l'application. Il contient les sections suivantes :
+
+- Header avec le logo et la navigation
+- Section d'accueil avec le titre et les boutons d'action
+- Section "La vie du festival" avec des descriptions et des images
+- Section "Line up !" avec les cartes des artistes
+- Section "Fesi'App ?" avec des informations sur l'application mobile
+- Section finale avec des liens de téléchargement de l'application
+- Footer avec des liens vers les conditions d'utilisation et la politique de confidentialité
+
+## Conclusion
+
+Cette documentation vous a guidé à travers les étapes nécessaires pour installer et lancer l'application Next.js avec Tailwind CSS pour le festival FESIPOP. Si vous avez des questions ou des problèmes, n'hésitez pas à consulter la documentation officielle de Next.js et Tailwind CSS ou à contacter l'équipe de développement.
+
+---
+
+Merci d'avoir choisi FESIPOP pour votre expérience festivalière !
