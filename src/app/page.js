@@ -14,9 +14,9 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="bg-image1 w-full bg-cover bg-center bg-no-repeat">
+        <section className="bg-image1 w-full bg-cover bg-center bg-no-repeat mx-auto">
           <div className="xl:py-58 bg-black/50 py-12 text-white md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+            <div className="container px-4 md:px-6 mx-auto">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tighter tracking-widest sm:text-5xl md:text-6xl lg:text-7xl/none">
@@ -36,16 +36,16 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full bg-[#1B1464] py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="mb-12 text-center text-3xl font-bold tracking-tighter sm:text-5xl">
               La vie du festival
             </h2>
             <p className="text-l mb-12 text-center tracking-tighter">
-              Plongez dans l'effervescence du Fesi Pop ! Venez vivre des moments
+              Plongez dans l&apos;effervescence du Fesi Pop ! Venez vivre des moments
               magiques et inoubliables, où la musique, la joie et les bonnes
-              vibrations se rencontrent. Laissez-vous emporter par l'énergie
+              vibrations se rencontrent. Laissez-vous emporter par l&apos;énergie
               festive et les sourires contagieux. Rejoignez-nous et découvrez
-              pourquoi Fesi Pop est l'endroit où il faut être !
+              pourquoi Fesi Pop est l&apos;endroit où il faut être !
             </p>
             <div className="grid gap-6 lg:grid-cols-2">
               <a href="#" className="group relative block bg-black">
@@ -133,7 +133,7 @@ export default function Home() {
                         les bonnes ondes sont au rendez-vous. Ne manquez pas
                         cette occasion unique de vivre des moments inoubliables
                         et de profiter de la musique comme jamais auparavant.
-                        Rejoignez-nous et laissez-vous emporter par l'énergie
+                        Rejoignez-nous et laissez-vous emporter par l&apos;énergie
                         positive de K STAR !
                       </p>
                     </div>
@@ -160,7 +160,7 @@ export default function Home() {
                       <p className="text-sm text-white">
                         Le Fesipop vous invite à découvrir notre super boutique,
                         spécialement conçue pour vous ! Venez explorer une
-                        sélection unique d'articles qui feront briller vos
+                        sélection unique d&apos;articles qui feront briller vos
                         journées. Plongez dans une ambiance festive et
                         laissez-vous tenter par des trésors qui vous feront
                         vibrer. Rejoignez-nous et faites-vous plaisir avec notre
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="mb-12 text-center text-3xl font-bold tracking-tighter sm:text-5xl">
               Line up !
             </h2>
@@ -186,9 +186,9 @@ export default function Home() {
         </section>
         <section className="w-full bg-[#12CBC4] py-12 md:py-24 lg:py-32">
           <h2 className="mb-12 text-center text-5xl font-bold text-white">
-            Fesi'App ?
+            Fesi&apos;App ?
           </h2>
-          <div className="w-100 container flex">
+          <div className="w-100 container mx-auto flex">
             <div className="flex w-[50%] justify-center">
               <div className="bg-image2 relative flex h-[620px] w-[350px] justify-center rounded-2xl"></div>
             </div>
@@ -260,7 +260,7 @@ export default function Home() {
                           />
                         </svg>
                         <span className="ml-3">
-                          Une carte d'interaction pour voir les différents
+                          Une carte d&apos;interaction pour voir les différents
                           événements !
                         </span>
                       </li>
@@ -312,7 +312,7 @@ export default function Home() {
           <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
             <div className="text-center ltr:sm:text-left rtl:sm:text-right">
               <h2 className="text-3xl font-bold text-white">
-                Pourquoi télécharger l'application Fesipop ?
+                Pourquoi télécharger l&apos;application Fesipop ?
               </h2>
               <p className="w-50 mt-6 text-white/90">
                 Consultez le programme détaillé des concerts, des animations et
@@ -321,7 +321,7 @@ export default function Home() {
               <p className="w-50 text-white/90">
                 Naviguez facilement sur le site du festival grâce à notre carte
                 interactive. Trouvez rapidement les scènes, les stands et les
-                points d'intérêt.
+                points d&apos;intérêt.
               </p>
 
               <div className="mt-4 flex justify-center gap-6 sm:mt-8">
@@ -331,7 +331,7 @@ export default function Home() {
                     className="flex items-center justify-center rounded-full bg-black px-4 py-2 text-white shadow-md transition duration-300 hover:bg-gray-800"
                   >
                     <span className="font-semibold">
-                      Télécharger sur l'App Store
+                      Télécharger sur l&apos;App Store
                     </span>
                   </a>
                   <a
