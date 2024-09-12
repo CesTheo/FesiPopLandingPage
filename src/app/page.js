@@ -1,8 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import ArtistCards from "@/components/ArtistCards";
+import { useState } from "react";
+import Popup from "@/components/Popup";
 
 export default function Home() {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const openPopup = () => {
+        setIsPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    };
+
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="flex h-14 items-center px-4 lg:px-6">
@@ -28,8 +44,6 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="space-x-4">
-                  <button>Obtenez vos billets</button>
-                  <button variant="outline">Voir la LINE UP</button>
                 </div>
               </div>
             </div>
@@ -180,7 +194,6 @@ export default function Home() {
             </h2>
             <ArtistCards />
             <div className="mt-10 text-center">
-              <button>Voir la programmation complète</button>
             </div>
           </div>
         </section>
@@ -196,7 +209,7 @@ export default function Home() {
               <div
                 className="mx-auto max-w-md overflow-hidden rounded-xl py-6 text-white shadow-md md:max-w-2xl"
                 style={{
-                  background: "#12CBC4",
+                  background: "#15A8A3",
                   boxShadow: "13px 13px 54px #07514e,-13px -13px 54px #1dffff",
                 }}
               >
@@ -328,37 +341,22 @@ export default function Home() {
                 <div className="flex justify-center space-x-4">
                   <a
                     href="https://apps.apple.com/fesipop"
-                    className="flex items-center justify-center rounded-full bg-black px-4 py-2 text-white shadow-md transition duration-300 hover:bg-gray-800"
                   >
-                    <span className="font-semibold">
-                      Télécharger sur l&apos;App Store
-                    </span>
-                  </a>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=fesipop"
-                    className="flex items-center justify-center rounded-full bg-white px-4 py-2 text-black shadow-md transition duration-300 hover:bg-gray-100"
-                  >
-                    <span className="font-semibold">
-                      Télécharger sur Google Play
-                    </span>
+                    <Image alt="logo" height="50" src="/phoneapp.png" width="270" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <Popup isOpen={isPopupOpen} onClose={closePopup} /> 
       </main>
       <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
         <p className="text-xs text-gray-500">
           © 2023 FESIPOP Inc. All rights reserved.
         </p>
         <nav className="flex gap-4 sm:ml-auto sm:gap-6">
-          <Link className="text-xs underline-offset-4 hover:underline" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs underline-offset-4 hover:underline" href="#">
-            Privacy
-          </Link>
+        <button onClick={openPopup}  id="openPopupBtn" class="bg-[#B53471] text-white px-4 py-2 rounded">Devenir Bénévole</button>
         </nav>
       </footer>
     </div>
