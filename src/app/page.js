@@ -201,11 +201,11 @@ export default function Home() {
           <h2 className="mb-12 text-center text-5xl font-bold text-white">
             Fesi&apos;App ?
           </h2>
-          <div className="w-100 container mx-auto flex">
-            <div className="flex w-[50%] justify-center">
+          <div className="w-100 container mx-auto flex flex-col md:flex-row w-full justify-center">
+            <div className="flex w-full md:w-1/2 justify-center">
               <div className="bg-image2 relative flex h-[620px] w-[350px] justify-center rounded-2xl"></div>
             </div>
-            <div className="w-[50%]">
+            <div className="w-full md:w-1/2">
               <div
                 className="mx-auto max-w-md overflow-hidden rounded-xl py-6 text-white shadow-md md:max-w-2xl"
                 style={{
